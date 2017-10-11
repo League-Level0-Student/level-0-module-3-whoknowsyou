@@ -13,7 +13,7 @@ import java.awt.Color;;
 public class RobotColorChooser {
 	public static void main(String[] args) {
 Robot k2so = new Robot();
-k2so.setSpeed(10);
+k2so.setSpeed(50);
 k2so.penDown();
 //3. ask the user what color they would like the robot to draw
 String color =JOptionPane.showInputDialog("what color do you want");
@@ -28,13 +28,13 @@ k2so.setPenColor(Color.ORANGE);
         //5. if the user doesn’t enter anything, choose a random color
 	k2so.setRandomPenColor();
 }        //6. put a loop around your code so that you keep asking the user for more colors & drawing them
-		
+	
 		//2. set the pen width to 10
 		k2so.setPenWidth(10);
 	    //1. make the robot draw a shape (this will take more than one line of code)
 for(int i=0; (i<100);i++){
-k2so.move(25);
-k2so.turn(i);
+k2so.move(i+100);
+k2so.turn(10+i);
 	}
 }
 }
