@@ -29,10 +29,10 @@ public class FizzBuzz {
 public static void main(String[] args) {
 for (int i = 20; i >=0; i--) {
 	
-if (i%3&&5==0) {
+if (i%3==0&&i%5==0) {
 System.out.println("fizbuzz");	
 
-}elseif (i%3==0) {
+}else if (i%3==0) {
 System.out.println("fizz");	
 }else if (i%5==0) {
 System.out.println("buzz");	
